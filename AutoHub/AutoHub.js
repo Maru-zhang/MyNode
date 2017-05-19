@@ -1,8 +1,14 @@
 var schedule = require('node-schedule');
+var callfile = require('child_process');
+var path = require('path')
 
 function scheduleCronstyle(){
-    schedule.scheduleJob('0 0 11 * * *', function(){
-        console.log('scheduleCronstyle:' + new Date());
+    schedule.scheduleJob('1 * * * * *', function(){
+        console.log('start fake ... \n scheduleCronstyle:' + new Date());
+        console.log(__dirname + '/fake-commit.sh');
+        callfile.execFile(__dirname + '/fake-commit.sh', function (err, stdout, stderr) {
+
+		});
     }); 
 }
 
