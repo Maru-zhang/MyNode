@@ -1,7 +1,7 @@
 var schedule = require('node-schedule');
 
 function scheduleCronstyle(){
-    schedule.scheduleJob('1-10 * * * * *', function(){
+    schedule.scheduleJob('0 0 11 * * *', function(){
         console.log('scheduleCronstyle:' + new Date());
     }); 
 }
