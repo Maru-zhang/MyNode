@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "debug-log": "^1.0.1",
     "node-schedule": "^1.2.1"
   }
 }
