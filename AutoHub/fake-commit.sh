@@ -7,6 +7,6 @@ if [ ! -x "$path"]; then
 fi
 date >> mass.txt
 cd ..
-# git add .
-# git commit -m "this is auto commit"
-# git push origin
+git add .
+git commit -m "this is auto commit"
+git push origin
